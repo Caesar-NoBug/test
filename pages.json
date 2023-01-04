@@ -1,0 +1,57 @@
+{
+	"pages": [
+    {
+              "path" : "pages/main/main",
+              "style" :                                                                                    
+              {
+                  "enablePullDownRefresh": false
+              }
+              
+          }
+          ,{
+              "path" : "pages/chatbox/chatbox",
+              "style" :                                                                                    
+              {
+                  "enablePullDownRefresh": true
+              }
+              
+          }
+          ,{
+              "path" : "pages/my/my",
+              "style" :                                                                                    
+              {
+                  "enablePullDownRefresh": false
+              }
+              
+          }
+  ],"tabBar": {
+      "list": [
+        {
+          "pagePath": "pages/main/main",
+          "text": "主页"
+        },
+        {
+          "pagePath": "pages/chatbox/chatbox",
+          "text": "信箱"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的"
+        }
+      ]
+    },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "少年强国",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+    "easycom": {
+      "autoscan": true,
+      "custom": {
+        "nut-(.*)?-(.*)": "@/uni_modules/sky-nutui/components/sky-nutui/packages/__VUE/$1$2/index.vue", // 匹配components目录内的vue文件
+        "nut-(.*)": "@/uni_modules/sky-nutui/components/sky-nutui/packages/__VUE/$1/index.vue"
+      }
+    },
+	"uniIdRouter": {}
+}
